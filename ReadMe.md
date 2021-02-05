@@ -1,11 +1,11 @@
 1. To create database run the script given in "Products_create.txt" in mysql workbench. It will create the database named "product_shop" for the project.
 
-2. Open terminal in "server". Start server with "npm run start".
+2. Open terminal in "server" . Install node dependencies with "npm i" > Start server with "npm run start".
 
 3. To seed the database with sample data with server running:
-	Open terminal in "dbseeder".. Start with "npm run start" and sample data will be seeded.
+	Open terminal in "dbseeder" > Install node dependencies with "npm i" > Start with "npm run start" and sample data will be seeded.
 	
-4. Open  terminal in "client"> Start client with "npm run start".
+4. Open  terminal in "client" > Install node dependencies with "npm i" > Start client with "npm run start".
 
 5. Connection to mysql database configurations (host, user, password, database) are provided in server > index.js lines "15-20" if configuration is needed to connect to database.
 
