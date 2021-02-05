@@ -1,0 +1,33 @@
+CREATE DATABASE product_shop;
+
+USE product_shop;
+
+CREATE TABLE Customer (
+    IdCustomer int NOT NULL AUTO_INCREMENT,
+    Email varchar(100) NOT NULL,
+    Password varchar(500) NOT NULL,
+    DateOfBirth date NOT NULL,
+    CONSTRAINT Customer_pk PRIMARY KEY (IdCustomer)
+);
+
+CREATE TABLE Ordermade (
+    IdOrder int NOT NULL  AUTO_INCREMENT,
+    IdCustomer int NOT NULL,
+    IdProduct int NOT NULL,
+    Date date NOT NULL,
+    Quantity int NOT NULL,
+    CONSTRAINT Order_pk PRIMARY KEY (IdOrder)
+);
+
+CREATE TABLE Product (
+    IdProduct int NOT NULL  AUTO_INCREMENT,
+    Name varchar(50) NOT NULL,
+    Description varchar(500) NOT NULL,
+    CONSTRAINT Product_pk PRIMARY KEY (IdProduct)
+);
+
+ALTER TABLE Ordermade ADD CONSTRAINT Order_Customer FOREIGN KEY Order_Customer (IdCustomer)
+    REFERENCES Customer (IdCustomer);
+
+ALTER TABLE Ordermade ADD CONSTRAINT Order_Product FOREIGN KEY Order_Product (IdProduct)
+    REFERENCES Product (IdProduct);

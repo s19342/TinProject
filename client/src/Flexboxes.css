@@ -1,0 +1,15 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container * {
+  margin: 10px;
+}
+
+.errorStatus {
+  color: red;
+  font-size: 10px;
+}

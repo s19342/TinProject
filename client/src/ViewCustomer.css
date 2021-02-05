@@ -1,0 +1,39 @@
+.listItemTable {
+  margin: 10px;
+  border: solid darkgray 3px;
+  padding: 30px;
+}
+
+.errorStatus {
+  color: red;
+  font-size: 10px;
+}
+
+button {
+  background-color: lightgray;
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card-button {
+  padding: 10px;
+}
+
+button:hover {
+  background-color: gray;
+  color: darkblue;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewCustomer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
