@@ -29,7 +29,7 @@
 
 13. The forms for inserting and updating are client side validated with JS and server side validated with express-validator package.
 
-14. Registration and logging in functions have been implemented as well as different functionalities based on user status (not logged in/logged in as customer/logged in as guest).
+14. Registration and logging in functions have been implemented as well as different functionalities based on user status (not logged in/logged in as customer/logged in as admin).
 
 15. Pagination of displayed lists has also been implemented.
 
